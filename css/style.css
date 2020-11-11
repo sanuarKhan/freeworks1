@@ -1,0 +1,544 @@
+/******************************common css*************************************/
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/****************************************** body css****************************/
+body {
+    max-width: 100%;
+    height: 100vh;
+
+    background-image: url(/images/bg.jpg);
+    background-image: url(https://images.unsplash.com/photo-1517707711963-adf9078bdf01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.overlay {
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.44);
+
+}
+
+/********************************************home page**************************/
+
+#bar {
+    display: none;
+}
+
+#home h2 {
+    color: #FF0066;
+    font-size: 100px;
+    margin-left: 150px;
+}
+
+#home p:nth-last-child(1) {
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.text {
+    color: #FF0066;
+    font-size: 100px;
+    text-align: center;
+}
+
+.subMenuBox {
+    display: none;
+}
+
+/*********************CourseInformation*****************************/
+
+#CourseInformation {
+    display: none;
+    padding-bottom: 200px;
+}
+
+
+#one {
+    /*    display: none;*/
+}
+
+#two {
+    display: none;
+}
+
+#three {
+    display: none;
+}
+
+#four {
+    display: none;
+}
+
+#five {
+    display: none;
+}
+
+#six {
+    display: none;
+}
+
+#seven {
+    display: none;
+}
+
+#eight {
+    display: none;
+}
+
+.iwidth {
+    width: 90%;
+
+}
+
+#upper {
+    display: none;
+}
+
+/**********************CourseTeacherInformation************************/
+
+#CourseTeacherInformation {
+    display: none;
+}
+
+/*************************SemesterFinalQuestions***************************/
+
+#SemesterFinalQuestions {
+    display: none;
+}
+
+.grid-box {
+    display: flex;
+}
+
+.box {
+    width: 33%;
+    height: 150px;
+    background: #63d1eb;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box p {
+    font-size: 32px;
+    color: #ea68f5;
+
+}
+
+#firstOddPdfs {
+    /*    display: none;*/
+}
+
+#firstEvenPdfs {
+    display: none;
+}
+
+#secondOddPdfs {
+    display: none;
+}
+
+#secondEvenPdfs {
+    display: none;
+}
+
+#thirdOddPdfs {
+    display: none;
+}
+
+#thirdEvenPdfs {
+    display: none;
+}
+
+#fourthOddPdfs {
+    display: none;
+}
+
+#fourthEvenPdfs {
+    display: none;
+}
+
+/***************************BookReference*****************/
+
+#BookReference {
+    display: none;
+    padding: 262px
+}
+
+/************************responsive*******************************/
+
+@media (max-width:992px) {
+
+    #toggle {
+        display: none;
+        position: absolute;
+        right: 80px;
+        margin-top: 20px;
+        background-color: rgb(0 178 255 / 20%) !important;
+        margin-top: 58px;
+        z-index: 1;
+    }
+
+    #bar {
+        display: block;
+        float: right;
+    }
+
+    .devider {
+        width: 100%;
+        height: 90px;
+    }
+
+    #upper {
+        position: fixed;
+        right: 100px;
+        bottom: 30px
+    }
+
+
+}
+
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #CourseInformation {
+
+        padding-bottom: 200px;
+    }
+
+    #SemesterFinalQuestions {
+        padding-bottom: 200px;
+    }
+
+    #home {
+        padding-bottom: 200px;
+    }
+
+    #CourseTeacherInformation {
+        padding-bottom: 200px;
+    }
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 576.9px) and (max-width:991.99px) {
+
+    .overlay {
+        height: 100vh;
+    }
+
+    #home {
+        padding-bottom: 150px;
+    }
+
+    #bar {
+
+        font-size: 30px;
+        position: absolute;
+        top: 10px;
+        right: 100px;
+        z-index: 1;
+
+    }
+
+    .subMenuBox {
+        display: none;
+    }
+
+
+    .submenu {
+        overflow: scroll;
+        width: 220px;
+        height: 300px;
+        position: absolute;
+        left: -54px;
+        top: 100px;
+
+    }
+
+    #CourseInformation {
+        padding-top: 58px;
+        padding-bottom: 0;
+    }
+
+    #CourseInformation .submenu {
+        left: 15px;
+    }
+
+    .iwidth {
+        width: 100%;
+
+    }
+
+    .pdf-box {
+        width: 300px !important;
+        margin: 25px auto;
+    }
+
+    .download {
+        display: block;
+        width: 200px;
+        margin-left: 56px;
+        margin: auto;
+        padding: 5px;
+        margin-bottom: 17px;
+
+    }
+
+    /*    ***********************************/
+
+    .table {
+        position: relative !important;
+        left: 76px !important;
+        width: 300px;
+        top: 106px;
+    }
+
+    #CourseTeacherInformation {
+        padding-bottom: 200px;
+    }
+
+
+    /*    **********************************/
+    .pdfList {
+        position: absolute;
+        top: 92px;
+        right: -18px;
+
+    }
+
+
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+
+    body {
+        background-image: url(../images/bg2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    #toggle {
+
+        position: inherit;
+        right: none;
+        float: left margin-top: 0;
+        background-color: rgb(0 178 255 / 20%) !important;
+        margin-top: 0;
+
+    }
+
+    #bar {
+        color: #000 !important;
+        font-size: 30px;
+        position: fixed;
+        top: 10px;
+        right: 50px;
+        z-index: 1;
+
+    }
+
+    #home h2 {
+        margin-top: 45px;
+        color: #FF0066;
+        font-size: 50px;
+        margin-left: 40px;
+    }
+
+    #home p:nth-last-child(1) {
+        color: #fff;
+        font-size: 20px;
+
+    }
+
+    .text {
+        color: #FF0066;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .subMenuBox {
+        display: inline-block;
+        background: #f7c9e5d9;
+        position: absolute;
+        top: 40px;
+        left: -10px;
+        z-index: 1;
+        width: 60px;
+        animation: moveLeft 5s linear;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        float: left;
+        overflow: scroll;
+        height: 118PX;
+    }
+
+    .pdf-box {
+        margin-top: 80px;
+    }
+
+   
+
+    #CourseInformation {
+        display: block;
+        margin-top: 145px;
+        background-image: url(../images/bg-3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0px 0 40px 0;
+    }
+
+    /*    *************************************/
+
+    #CourseTeacherInformation {
+
+        display: block;
+
+        background-image: url(../images/bg-4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 80px 0 380px 0;
+    }
+
+    #CourseTeacherInformation .subMenuBox {
+        top: -54px;
+    }
+    #CourseTeacherInformation .submenu {
+        top: -90px;
+    }
+
+    /*    **********************************/
+
+    #SemesterFinalQuestions {
+        display: block;
+
+        background-image: url(../images/bg-5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0px 0 40px 0;
+    }
+
+    .grid-box {
+        display: block;
+    }
+
+    .box {
+        width: 60%;
+        height: 170px;
+        background: #63d1eb;
+        margin: 25px auto;
+    }
+
+    .box p {
+        font-size: 32px;
+        color: #ea68f5;
+
+    }
+    
+    #SemesterFinalQuestions .submenu{
+        top: -39px;
+    }
+    #SemesterFinalQuestions .pdfList{
+        padding-top: 34px;
+    }
+
+
+    /*    ********************************/
+    #BookReference {
+        display: block;
+        background-image: url(../images/bg-6.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 200px;
+        margin: 0 auto;
+    }
+
+    /*
+#five{
+    display: block;
+}
+#six{
+    display: block;
+}
+#seven{
+    display: block;
+}
+*/
+}
+
+/*
+    .list-group-item-secondary {
+     color: #383d41; 
+     background-color: rgba(255, 255, 255, 0); 
+}
+*/
+}
+
+/*
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+*/
+
+
+
+/*animation*/
+
+@keyframes moveLeft {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 60px;
+    }
+}
+
+
+
+
+
+
+/*
+@media (max-width:992px) {
+    ul{
+        display: none;
+    }
+}
+*/
+
+
+
+/*custom bootstrap*/
+.nav-tabs {
+    border-bottom: none;
+}
+
+.table {
+    position: absolute;
+    left: -10px;
+}
